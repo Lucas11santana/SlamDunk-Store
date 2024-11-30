@@ -1,0 +1,763 @@
+body {
+  /* Gradiente de fundo para o body */
+  background: #ebeaea;
+  margin: 0;
+  padding: 0;
+}
+
+/*................................................................NavBar...................................................*/
+nav {
+  /* Navegação do menu principal */
+  background: #ececec;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Garantindo que a navbar esteja acima do conteúdo */
+}
+
+nav .links a {
+  /* Textos da navegação */
+  font-family: 'Helvetica Neue', 'helvetica, arial', 'roboto', sans-serif;
+  text-decoration: none;
+  color: black;
+  margin: 35px;
+  padding-bottom: 20px;
+  position: relative;
+  
+}
+nav .links a:hover{
+  color: rgb(66, 66, 66);
+}
+
+
+nav .logo img {
+  /* Logotipo */
+  z-index: 9999; 
+  height: 70px;
+  width: 125px;
+  background: none;
+}
+
+nav .icon-links {
+  display: flex;
+  gap: 20px;
+  /* Adiciona espaçamento entre os ícones */
+  justify-content: flex-end;
+  /* Alinha os ícones à direita */
+  align-items: center;
+  /* Alinha verticalmente os ícones */
+  padding-right: 20px;
+}
+
+nav .icon-links a {
+  color: black;
+}
+
+nav .icon-links a:hover {
+  color: rgb(66, 66, 66);
+}
+
+
+
+/*..............................................Caixa de busca (projeto futuro)...............................................*/
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  
+}
+
+.search__input {
+  font-family: 'Poppins', sans-serif;
+  font-size: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem;
+  border-radius: 30px;
+  width: 20em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, rgb(51, 51, 51) 0px 0px 0px 1.5px;
+}
+
+.search__input:hover,
+.search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #ccc;
+}
+
+.search__input:focus+.search__button {
+  background-color: #f0eeee;
+}
+
+.search__button {
+  border: none;
+  background-color: #f4f2f2;
+  margin-top: .1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  height: 1.3em;
+  width: 1.2em;
+  fill: #b4b4b4;
+}
+
+
+/*.............................................Display de Imagens.........................................................*/
+
+.slider {
+  padding-top: 90px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  /* 3 slides, cada um 100% */
+  animation: slide 23s infinite;
+  /* Animação contínua de 15 segundos */
+}
+
+.slide_img {
+  width: 300%;
+  flex: 1 0 100%;
+}
+
+.slide_img img {
+  width: 100%;
+  height: 61vh;
+  /* Ajusta a altura para 65% da viewport */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  20% {
+    transform: translateX(0%);
+  }
+
+  25% {
+    transform: translateX(-100%);
+  }
+
+  45% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(-200%);
+  }
+
+  70% {
+    transform: translateX(-200%);
+  }
+
+  75% {
+    transform: translateX(-300%);
+  }
+
+  85% {
+    transform: translateX(-300%);
+  }
+
+  90% {
+    transform: translateX(-400%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*..............................................(LOGOS DA NBA em grayscale)..............................................*/
+
+.brands {
+  margin-top: 50px;
+  /* Espaçamento acima da .brands */
+  margin-bottom: 50px;
+  /* Espaçamento abaixo da .brands */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Espaçamento entre os logos */
+}
+
+.nba {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nba-logos {
+  flex: 0 1 calc(100% / 30);
+  /* Agora, 30 itens por linha */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nba-logos img {
+  width: 56px;
+  height: auto;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: transform 0.5s ease;
+}
+
+.nba-logos img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+
+/*...................................................TEXTO ("EM DESTAQUE")...................................................*/
+.avaliacoes {
+  font-family: 'Helvetica Arial', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: rgb(77, 76, 76);
+  padding-top: 50px;
+}
+
+.background {
+  width: 100vw;
+  height: 250px; /* A altura será ajustada proporcionalmente à largura */
+  filter: grayscale(100%); /* Aplica o efeito apenas à imagem de fundo */
+  object-fit: cover; /* Mantém o ajuste sem cortar a imagem */
+}
+
+.avaliacoes h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+h1 .logo {
+  width: 80px; /* Tamanho do logo da NBA */
+  height: auto;
+}
+
+/*.................................PRODUTOS (IMPORTANTE)(do EM DESTAQUE e LINHA RETRO).............................................................*/
+
+
+/* Cards de produtos */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1px;
+  width: 100%;
+  padding-bottom: 10px;
+  max-width: 320px;
+  height: auto;
+  text-align: center;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease;
+  text-align: justify;
+  padding-left: 5px;
+}
+
+
+/* Imagens dos produtos */
+.image-container {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  /* Tamanho máximo da imagem */
+  margin: 0 auto;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Cores e detalhes dos produtos */
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-right: 230px;
+  margin: 10px 0;
+}
+
+.color-button {
+  width: 22px;
+  height: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.product-name {
+  text-align: justify;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  font-family: 'Poppins' sans-serif;
+}
+
+.product-name:hover {
+  font-weight: bold;
+}
+
+/* Responsividade dos cards de produtos */
+@media (max-width: 768px) {
+  .card {
+      max-width: 300px;
+      margin: 10px;
+  }
+
+  .product-name {
+      font-size: 16px;
+  }
+
+  .price {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+      max-width: 100%;
+      margin: 5px;
+  }
+
+  .image-container {
+      max-width: 250px;
+  }
+
+  .price,
+  .product-name {
+      font-size: 14px;
+  }
+}
+
+/*......................................................BANNER.............................*/
+.banner img{
+  padding-top: 50px;
+  display: block; /* Remove qualquer espaço abaixo da imagem */
+  width: 100%; /* Faz a imagem ocupar 100% da largura disponível */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Garante que a imagem cubra toda a área sem distorcer */
+}
+/*.....................................................................CATEGORIAS...........................................*/
+
+.categoria {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: white;
+  flex-wrap: wrap; /* Isso permitirá que os itens se ajustem quando a tela for menor */
+}
+
+.image-cate {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-cate:hover {
+  transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .categoria {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .image-cate {
+    width: 200px; /* Reduz o tamanho das imagens em telas menores */
+  }
+}
+
+
+/*..............................................................FeedBack...........................................................*/
+/* Estilização geral da estrutura */
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  
+}
+
+.organiza {
+  width: 90%;
+  /* Mantém um espaçamento confortável nas laterais */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Exibe 4 comentários lado a lado */
+  gap: 25px;
+}
+
+/* Estilização de cada card de review */
+.card0 {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.card0:hover {
+  transform: translateY(-10px);
+  /* Pequeno efeito ao passar o mouse */
+}
+
+/* Estilização da imagem com borda */
+.card0 .img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid black;
+  /* Borda com cor temática de basquete (amarelo) */
+}
+
+/* Estilização do texto */
+.card0 h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card0 span {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0;
+  text-align: justify;
+  max-width: 90%;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+/* Estilização da área de rating */
+.rating {
+  margin-top: 10px;
+}
+
+.rating i {
+  color: #fbc02d;
+  /* Cor da estrela temática */
+  font-size: 1.2em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carousel {
+    grid-template-columns: 1fr;
+    /* Exibe um comentário por linha no celular */
+  }
+
+  .card0 {
+    width: 100%;
+  }
+}
+
+
+
+/*.............................................................footer...........................................................*/
+
+/* Estilo geral do footer */
+.footer {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+.logo-footer {
+  width: 120px;
+  /* Ajuste o tamanho do logo */
+  height: auto;
+}
+
+.row3 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-col h3 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.footer-col p{
+  font-family:'Poppins',sans-serif;
+}
+.footer-col span{
+  font-family:'Poppins',sans-serif;
+}
+.footer-col ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  font-family: 'Poppins',sans-serif;
+  margin-bottom: 10px;
+}
+
+.footer-col ul li:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 600;
+}
+
+/* Social Icons */
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(100%);
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+}
+
+.footer-extra {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 80px;
+}
+
+.payment-partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-methods img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+}
+
+.payment-methods span {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.payment-icon {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.partners {
+  text-align: center;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.partner-logos img {
+  width: 35px;
+  height: 40px;
+  filter: grayscale(100%);
+}
+
+.partner-logos img:hover {
+  filter: grayscale(0);
+}
+
+.partner-logo {
+  width: 50px;
+  height: auto;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .row3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-extra {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .payment-methods {
+    flex-direction: column;
+  }
+
+  .payment-methods span {
+    margin-bottom: 5px;
+  }
+
+  .partner-logos {
+    flex-direction: column;
+  }
+
+  .partner-logo {
+    width: 80px;
+  }
+
+  .payment-methods {
+    width: 80px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

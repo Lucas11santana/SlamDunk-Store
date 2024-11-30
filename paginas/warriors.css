@@ -1,0 +1,641 @@
+body {
+    /* Gradiente de fundo para o body */
+    background: #1D428A;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*................................................................NavBar...................................................*/
+  nav {
+    /* Navegação do menu principal */
+    background: #ececec;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    /* Garantindo que a navbar esteja acima do conteúdo */
+  }
+  
+  nav .links a {
+    /* Textos da navegação */
+    font-family: 'Helvetica Neue', 'helvetica, arial', 'roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 35px;
+    padding-bottom: 20px;
+    position: relative;
+  
+  }
+  
+  nav .links a:hover {
+    color: rgb(66, 66, 66);
+  }
+  
+  
+  nav .logo img {
+    /* Logotipo */
+    z-index: 9999;
+    height: 70px;
+    width: 125px;
+    background: none;
+  }
+  
+  nav .icon-links {
+    display: flex;
+    gap: 20px;
+    /* Adiciona espaçamento entre os ícones */
+    justify-content: flex-end;
+    /* Alinha os ícones à direita */
+    align-items: center;
+    /* Alinha verticalmente os ícones */
+    padding-right: 20px;
+  }
+  
+  nav .icon-links a {
+    color: black;
+  }
+  
+  nav .icon-links a:hover {
+    color: rgb(66, 66, 66);
+  }
+  
+  /* Dropdown personalizado */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ebeaea;
+    width: 100vw;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 175px;
+    padding-top: 50px;
+    /* O dropdown aparecerá imediatamente abaixo do botão */
+    top: 38.5px;
+  }
+  
+  .dropdown a {
+    margin-bottom: 10px;
+  
+  }
+  
+  /* Exibe o menu dropdown quando o mouse está sobre o link ou o conteúdo do dropdown */
+  .dropdown:hover .dropdown-content,
+  .dropdown-content:hover {
+    display: block;
+  
+  }
+  
+  .dropdown-content h3 {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: black;
+  }
+  
+  .dropdown-content img {
+    width: 60px;
+  }
+  
+  .teams-container {
+    display: flex;
+  
+  }
+  
+  
+  .conference h4 {
+    text-align: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+  }
+  
+  .teams-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .teams-grid a {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    padding: 8px;
+    color: black;
+  }
+  
+  .teams-grid a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    object-fit: contain;
+  }
+  
+  /* Responsividade da navbar */
+  @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+  
+    nav .links a {
+        margin: 10px 0;
+    }
+  }
+  
+  
+  /*..............................................Caixa de busca (projeto futuro)...............................................*/
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  
+  }
+  
+  .search__input {
+    font-family: 'Poppins', sans-serif;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem;
+    border-radius: 30px;
+    width: 20em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, rgb(51, 51, 51) 0px 0px 0px 1.5px;
+  }
+  
+  .search__input:hover,
+  .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus+.search__button {
+    background-color: #f0eeee;
+  }
+  
+  .search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+  }
+  
+  .search__icon {
+    height: 1.3em;
+    width: 1.2em;
+    fill: #b4b4b4;
+  }
+  
+  /*...........................................................TEXTO (NOME DO TIME e BOX (QUADRADO BRANCO) )...............................................................*/
+  
+  .logo-nba {
+    font-family: 'Helvetica Arial', sans-serif;
+    font-size: 20px;
+    padding: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  
+  }
+  
+  .logo-nba h1 {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .logo-nba img {
+    width: 80px;
+    height: auto;
+    padding-right: 10px;
+  }
+  
+  /*.................................PRODUTOS (IMPORTANTE)(do EM DESTAQUE e LINHA RETRO).............................................................*/
+  .time {
+    background: white;
+    width: 85%;
+    /* Ajusta para 85% da largura da tela */
+    margin: 0 auto;
+    /* Centraliza o container */
+    padding-top: 90px;
+    padding-bottom: 200px;
+  }
+  
+  /* Cards de produtos */
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1px;
+    width: 100%;
+    padding-bottom: 10px;
+    max-width: 360px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease;
+    text-align: justify;
+    padding-left: 5px;
+  }
+  
+  
+  /* Imagens dos produtos */
+  .image-container {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    /* Tamanho máximo da imagem */
+    margin: 0 auto;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Cores e detalhes dos produtos */
+  .color-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 250px;
+    margin: 10px 0;
+  }
+  
+  .color-button {
+    width: 25px;
+    height: 15px;
+    border-radius: 30%;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: justify;
+  }
+  
+  .product-name {
+    text-align: justify;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Poppins' sans-serif;
+  }
+  
+  .product-name:hover {
+    font-weight: bold;
+  }
+  
+  /* Responsividade dos cards de produtos */
+  @media (max-width: 768px) {
+    .card {
+        max-width: 300px;
+        margin: 10px;
+    }
+  
+    .product-name {
+        font-size: 16px;
+    }
+  
+    .price {
+        font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+        max-width: 100%;
+        margin: 5px;
+    }
+  
+    .image-container {
+        max-width: 250px;
+    }
+  
+    .price,
+    .product-name {
+        font-size: 14px;
+    }
+  }
+  
+  
+  
+  
+  /*.............................................................footer...........................................................*/
+  
+  /* Estilo geral do footer */
+  .footer {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+    height: 50px;
+  }
+  
+  .logo-footer {
+    width: 120px;
+    /* Ajuste o tamanho do logo */
+    height: auto;
+  }
+  
+  .row3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col p {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-col span {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-col ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li:hover {
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .playstore-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 9999px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 0.625rem 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    outline: 0;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  .playstore-button:hover {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .texts {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  
+  .text-1 {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  .text-2 {
+    font-weight: 600;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons li {
+    margin: 0 10px;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+    transition: all 0.2s ease;
+  }
+  
+  .social-icon:hover {
+    filter: none;
+    transform: scale(1.1);
+  }
+  
+  .footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
+  
+  .footer-bottom {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .footer-extra {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 80px;
+  }
+  
+  .payment-partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .payment-methods img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+  }
+  
+  .payment-methods span {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .payment-icon {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+  }
+  
+  .partners {
+    text-align: center;
+  }
+  
+  .partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .partner-logos img {
+    width: 35px;
+    height: 40px;
+    filter: grayscale(100%);
+  }
+  
+  .partner-logos img:hover {
+    filter: grayscale(0);
+  }
+  
+  .partner-logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .row3 {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footer-extra {
+        flex-direction: column;
+        gap: 15px;
+    }
+  
+    .payment-methods {
+        flex-direction: column;
+    }
+  
+    .payment-methods span {
+        margin-bottom: 5px;
+    }
+  
+    .partner-logos {
+        flex-direction: column;
+    }
+  
+    .partner-logo {
+        width: 80px;
+    }
+  
+    .payment-methods {
+        width: 80px;
+        margin: 0 auto;
+        text-align: center;
+    }
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .row3 {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footer-extra {
+        flex-direction: column;
+        gap: 15px;
+    }
+  
+    .payment-methods {
+        flex-direction: column;
+    }
+  
+    .payment-methods span {
+        margin-bottom: 5px;
+    }
+  
+    .partner-logos {
+        flex-direction: column;
+    }
+  
+    .partner-logo {
+        width: 80px;
+    }
+  
+    .payment-methods {
+        width: 80px;
+        margin: 0 auto;
+        text-align: center;
+    }
+  }
