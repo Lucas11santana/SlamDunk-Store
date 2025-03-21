@@ -1,41 +1,56 @@
 ﻿# SlamDunk-Store🏀
 
-Meu primeiro site utilizando tecnologias do HTML,CSS e JavaScript , esta foi minha primeira experiência na área de programação!!
+O projeto Slam Dunk Store é uma loja virtual fictícia desenvolvida com HTML, CSS e JavaScript, focada na venda de produtos relacionados ao basquete, como regatas, bonés e camisas dos times da NBA. O site foi projetado para ser totalmente responsivo, oferecendo uma experiência de navegação agradável, moderna e organizada. Este projeto demonstra habilidades em desenvolvimento front-end, usabilidade e design visual.
 
+Esta também foi minha primeira experiência na área de programação!!
+
+
+## Funcionalidades 🌟
+
+- **Layout responsivo**: adaptado para desktop e dispositivos móveis.
+- **Barra de navegação interativa**: com links rápidos para Home, Sobre Nós, Produtos e Contatos.
+- **Sistema de busca**: campo de pesquisa de produtos na própria navegação.
+- **Carrossel de banners**: destaques visuais rotativos na página inicial.
+- **Catálogo de produtos**: dividido em categorias como regatas, bonés, camisas e linha retrô.
+- **Visualização por times**: logos da NBA que direcionam para produtos de cada equipe.
+- **Troca de cores do produto**: botão interativo que muda as imagens do produto com diferentes variações de cor.
+- **Simulação de carrinho**: link com ícone de carrinho (pronto para futuras implementações).
+- **Área de avaliações**: seção com feedback de clientes fictícios.
+- **Links de redes sociais**: integração com Instagram, TikTok e Facebook.
+- **Seção de download do aplicativo (fictício)**: botões para Play Store e App Store.
+- **Rodapé completo**: informações de conta, formas de pagamento aceitas e política de devolução.
+
+## Tela Inicial 📸
+
+<img src="imagens/Captura de tela.png">
 
 ## 📂 Estrutura do Projeto
 
-**MarkBurger/**<br> <br>
+**SlamDunk Store/**<br> <br>
 ├── index.html  # **Página principal do site** <br><br>
-               ├── CSS/ <br>
+               ├── css/ <br>
                 &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└──main.css # **Estilos principais** <br>
                 &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── carrinho.css  # **Estilo da página do carrinho** <br><br>
                 &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── contatos.css  # **Estilo da página de contatos** <br><br>
                 &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── produtos.css  # **Estilo da página da produtos** <br><br>
                 &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── sobre.css  # **Estilo da página sobre nós** <br><br>
                 &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── usuario.css  # **Estilo da página usuario** <br><br>
-              ├── JS/<br>
-                 &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── script.js **Scripts personalizados** <br>
-                  &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── scrollreveal.min.js  # **Biblioteca para animações de scroll** <br><br>
-              ├── Img/  # **Imagens utilizadas no site** <br>
-                 &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── logo-burger.svg <br>
-                  &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── home-burger.png <br>
-                     &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── popular-burger-chicken.png <br>
-                      &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── ... (outras imagens) <br>
+              ├── js/ # **Códigos utilizados para gerar interatividade do site<br>
+                 &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── slides_de_imagens.js **Scripts responsável pelo carrosel de imagens do banner principal** <br>
+                  &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── usuario.js  # **Interatividade na página do usuário** <br>
+                    &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── times.js  # **Permite trocar as cores e imagem do produto de forma interativa.** <br>
+                     &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── times-produto.js  # **Permite trocar as cores e imagem do produto de forma interativa na página de compra.** <br>
+                      &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── produto.js  # **Cria a interatividade da página de compra do produto** <br><br>
+              ├── imagens/  # **Imagens utilizadas no site** <br>
+                 &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── icon-logo.png <br>
+                  &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── LOGAO.png <br>
+                     &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── banner.png <br>
+                      &#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;&#8287;└── ... (dentre outras imagens) <br>
 <br>
 
+## Tela Abaixo 📸
 
-## Funcionalidades 🌟
-
-- **Menu de navegação interativo**: Inclui um menu responsivo para dispositivos móveis.
-- **Animações de scroll**: Utiliza a biblioteca `ScrollReveal` para animações suaves ao rolar a página.
-- **Design responsivo**: Adapta-se a diferentes tamanhos de tela, desde dispositivos móveis até desktops.
-- **Seções principais**:
-  - **Home**: Apresentação da marca com imagens e slogan.
-  - **Recipe**: Destaque dos ingredientes secretos.
-  - **Popular**: Lista dos hambúrgueres mais pedidos.
-  - **Delivery**: Informações sobre entrega rápida.
-  - **Contact**: Formas de contato e localização.
+<img src="imagens/Captura2.png">
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -43,9 +58,9 @@ Meu primeiro site utilizando tecnologias do HTML,CSS e JavaScript , esta foi min
 - **CSS3**: Estilização do site, e seus efeitos.
 - **JavaScript**: Funcionalidades interativas.
 
-## Tela Inicial 📸
+## Rodapé 📸
 
-<img src="imagens/Captura de tela.png">
+<img src="imagens/rodapé.png">
 
 ## 🛠️ Como Executar o Projeto
 
@@ -53,9 +68,3 @@ Meu primeiro site utilizando tecnologias do HTML,CSS e JavaScript , esta foi min
    ```bash
    git clone https://github.com/Lucas11santana/SlamDunk-Store.git
 
-   cd MarkBurger
-
-Este projeto é apenas para fins educacionais e não possui uma licença específica. As imagens e textos são fictícios e não devem ser utilizados comercialmente.
-
-
-Sinta-se à vontade para personalizar o README com suas informações e links!
