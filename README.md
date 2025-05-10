@@ -22,7 +22,7 @@ Esta também foi minha primeira experiência na área de programação!!
 
 ## Tela Inicial 📸
 
-<img src="imagens/Captura de tela.png">
+<img src="imagens/captura1.png">
 
 ## 📂 Estrutura do Projeto
 
@@ -57,6 +57,15 @@ Esta também foi minha primeira experiência na área de programação!!
 - **HTML5**: Estrutura semântica do site.
 - **CSS3**: Estilização do site, e seus efeitos.
 - **JavaScript**: Funcionalidades interativas.
+
+## Página dos Times 🏀
+
+<p align="center">
+  <img src="imagens/captura2.png" alt="Imagem 1" width="500" style="margin: 10px;">
+  <img src="imagens/captura3.png" alt="Imagem 2" width="500" style="margin: 10px;">
+  <img src="imagens/captura4.png" alt="Imagem 3" width="500" style="margin: 10px;">
+</p>
+
 
 ## Rodapé 📸
 
