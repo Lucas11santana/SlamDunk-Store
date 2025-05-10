@@ -61,10 +61,10 @@ Esta também foi minha primeira experiência na área de programação!!
 ## Página dos Times 🏀
 
 <p align="center">
-  <img src="imagens/captura2.png" alt="Imagem 1" width="500" style="margin: 10px;">
-  <img src="imagens/captura3.png" alt="Imagem 2" width="500" style="margin: 10px;">
-  <img src="imagens/captura4.png" alt="Imagem 3" width="500" style="margin: 10px;">
-  <img src="imagens/captura5.png" alt="Imagem 4" width="500" style="margin: 10px;">
+  <img src="imagens/captura2.png" alt="Imagem 1" width="300" style="margin: 10px;">
+  <img src="imagens/captura3.png" alt="Imagem 2" width="300" style="margin: 10px;">
+  <img src="imagens/captura4.png" alt="Imagem 3" width="300" style="margin: 10px;">
+  <img src="imagens/captura5.png" alt="Imagem 4" width="300" style="margin: 10px;">
 </p>
 
 
