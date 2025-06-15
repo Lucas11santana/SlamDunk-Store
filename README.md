@@ -22,7 +22,7 @@ Esta também foi minha primeira experiência na área de programação!!
 
 ## Tela Inicial 📸
 
-<img src="imagens/captura1.png">
+<img src="imagens/Group 1.png">
 
 ## 📂 Estrutura do Projeto
 
