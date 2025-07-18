@@ -52,11 +52,13 @@ Esta também foi minha primeira experiência na área de programação!!
 
 <img src="imagens/Captura2.png">
 
-## 🚀 Tecnologias Utilizadas
-
-- **HTML5**: Estrutura semântica do site.
-- **CSS3**: Estilização do site, e seus efeitos.
-- **JavaScript**: Funcionalidades interativas.
+## 🚀 Tecnologias Usadas
+<p>O projeto foi desenvolvido utilizando as seguintes linguagens e tecnologias:</p>
+<div>
+  <img src="imagens/html5-original.svg" alt="Imagem 1" width="30" style="margin: 10px;">
+  <img src="imagens/css3-original.svg" alt="Imagem 2" width="30" style="margin: 10px;">
+  <img src="imagens/javascript.png" alt="Imagem 1" width="30" style="margin: 10px;">
+</div>
 
 ## Página dos Times 🏀
 
